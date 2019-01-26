@@ -21,5 +21,5 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 
-size_t	ft_strlen(const char*s, size_t maxlen);
+size_t	ft_strlen(const char*str);
 #endif
