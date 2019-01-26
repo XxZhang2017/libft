@@ -1,37 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   bzero.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: xinzhang <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/01/25 17:06:18 by xinzhang          #+#    #+#             */
-/*   Updated: 2019/01/25 17:41:11 by xinzhang         ###   ########.fr       */
+/*   Created: 2019/01/24 16:32:04 by xinzhang          #+#    #+#             */
+/*   Updated: 2019/01/25 16:42:45 by xinzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_strcat(char *dest, const char *src)
+void	ft_bzero(void *s, size_t n)
 {
-    ft_strcpy(dest + ft_strlen(dest), src);
-    return (dest);
-}
-
-/*char	*ft_strcat(char *s1, const char *s2)
-{
+	char	*ptr;
 	size_t	i;
-	size_t	j;
 
-	if (!s1)
-		return (NULL);
-	if (!s2)
-		return (s1);
-	i = 0;
-	j = 0;
-	while (s1[i])
-		i++;
-	while (s2[j])
-		s1[i++] = s2[j++];
-	return (s1);
-}*/
+	i = -1;
+	ptr = (char *)s;
+	while (++i < n)
+		ptr[i] = 0;
+}

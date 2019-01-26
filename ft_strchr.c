@@ -1,37 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: xinzhang <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/01/25 17:06:18 by xinzhang          #+#    #+#             */
-/*   Updated: 2019/01/25 17:41:11 by xinzhang         ###   ########.fr       */
+/*   Created: 2019/01/25 17:44:57 by xinzhang          #+#    #+#             */
+/*   Updated: 2019/01/25 17:49:02 by xinzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_strcat(char *dest, const char *src)
+char	*ft_strchr(const char *s, int c)
 {
-    ft_strcpy(dest + ft_strlen(dest), src);
-    return (dest);
-}
-
-/*char	*ft_strcat(char *s1, const char *s2)
-{
-	size_t	i;
-	size_t	j;
-
-	if (!s1)
+	if (!s)
 		return (NULL);
-	if (!s2)
-		return (s1);
-	i = 0;
-	j = 0;
-	while (s1[i])
-		i++;
-	while (s2[j])
-		s1[i++] = s2[j++];
-	return (s1);
-}*/
+	while (*s)
+	{
+		if (*s == (char)c)
+			return (s);
+		s++;
+	}
+	return (NULL);
+}

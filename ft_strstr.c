@@ -1,15 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   bzero.c                                            :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: xinzhang <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/01/24 16:32:04 by xinzhang          #+#    #+#             */
-/*   Updated: 2019/01/24 16:36:26 by xinzhang         ###   ########.fr       */
+/*   Created: 2019/01/25 17:49:30 by xinzhang          #+#    #+#             */
+/*   Updated: 2019/01/25 17:54:52 by xinzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	bzero(void *s, size_t n);
+char	*ft_strstr(const char *haystack, const char *needle)
+{
+	int	i;
+	int
