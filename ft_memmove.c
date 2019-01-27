@@ -16,12 +16,20 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	char	*ptr1;
 	char	*ptr2;
-	size_n	i;
+	size_t	i;
 
-	i = 0;
 	ptr1 = (char *)dst;
 	ptr2 = (char *)src;
-	while (--len >= 0)
-		ptr1[len] = ptr2[len];
+	i = 0;
+	if ((ptr1 - ptr2) > 0 && (ptr1 - ptr2) < ft_strlen(ptr2))
+	{
+		while (len-- > 0)
+			ptr1[len - 1] = ptr2[len - 1];
+	}
+	else
+	{
+		while (i++ < len)
+			ptr1[i] = ptr2[i];
+	}
 	return (ptr1);
 }

@@ -7,7 +7,7 @@
 
 char    *ft_strrchr(const char *s, int c)
 {
-    size_t  i;
+    int  i;
 
     if (!s)
         return (NULL);
@@ -15,7 +15,7 @@ char    *ft_strrchr(const char *s, int c)
     while (--i >= 0)
     {
         if (s[i] == c)
-            return (i);
+            return ((char *)&s[i]);
     }
     return (NULL);
 }

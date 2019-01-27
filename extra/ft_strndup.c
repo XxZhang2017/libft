@@ -4,7 +4,7 @@
 
 #include "libft.h"
 
-char    *strndup(const char *s1, size_t n)
+char    *ft_strndup(const char *s1, size_t n)
 {
     size_t  len;
     
