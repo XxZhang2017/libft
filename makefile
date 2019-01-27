@@ -27,8 +27,8 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	ar rc $(NAME) $(OBJ)
 
-# $(OBJ): $(SOURCE)
-# 	gcc $(CFLAG) $(SOURCE)
+$(OBJ): $(SOURCE)
+	gcc -c $(CFLAG) $(SOURCE)
 
 clean:
 	rm -f $(OBJ)
