@@ -20,7 +20,7 @@ SOURCE = ft_memset.c ft_bzero.c ft_memcpy.c ft_memset.c ft_memccpy.c \
 		 ft_strncmp.c ft_strrchr.c ft_strcmp.c ft_strnstr.c
 
 
-OBJ = $(SOURCE:%.c = %.o)
+OBJ = $(SOURCE:.c = .o)
 
 all: $(NAME)
 
