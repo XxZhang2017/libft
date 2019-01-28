@@ -33,12 +33,3 @@ int ft_atoi(const char *str)
     }
     return (reg * flag);
 }
-
-int main()
-{
-    char *d;
-
-    d = "  -343";
-    printf("%d\n", ft_atoi(d));
-    return (0);
-}
