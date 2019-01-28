@@ -25,19 +25,44 @@ char	*ft_strstr(const char *haystack, const char *needle)
 	if (!needle)
 		return ((char *)&haystack[ft_strlen(haystack) - 1]);
 	while (haystack[i] && needle[j])
-	{
-		
+	{	
 		if (haystack[i] == needle[j])
 		{
 			j = 0;
-			temp = i;
+			temp = i;	
 			while (needle[j] && (haystack[i++] == needle[j++]))
 				;
+			if (!needle[j])
+				return ((char *)&haystack[temp]); 
+			i = temp;
 		}
-		if (j == ft_strlen(needle) - 1)
-			return ((char *)&haystack[i]);
-		else 
-			i = temp + 1;
+		i++;
 	}
 	return (NULL);
 }
+
+int main() 
+{ 
+    // Take any two strings 
+    char s1[] = "Geeksfor"; 
+    char s2[] = "for"; 
+    char*	p1; 
+	char*	p2;
+  
+    // Find first occurence of s2 in s1 
+//    p1 = strstr(s1, s2); 
+	p2 = ft_strstr(s1, s2); 
+    // Prints the result 
+    // if (p1) { 
+    //     printf("String found\n"); 
+    //     printf("First occurrence of string '%s' in '%s' is '%s'", s2, s1, p1); 
+    // } else
+    //     printf("String not found\n"); 
+	
+	if (p2) { 
+        printf("String found\n"); 
+        printf("First occurrence of string '%s' in '%s' is '%s'", s2, s1, p2); 
+    } else
+        printf("String not found\n"); 
+    return 0; 
+} 
