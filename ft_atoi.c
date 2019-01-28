@@ -11,7 +11,7 @@ int ft_atoi(const char *str)
     int i;
 
     reg = 0;
-    while (str && !ft_isdigit(*str))
+    while (str && (*str == ' ' || *str == '\t' || *str == '\f'))
         str++;
     if (*str == '-')
     {
@@ -29,7 +29,16 @@ int ft_atoi(const char *str)
             reg += str[i] - '0';
         }
         else
-            return (reg);
+            return (reg * flag);
     }
-    return (reg);
+    return (reg * flag);
+}
+
+int main()
+{
+    char *d;
+
+    d = "  -343";
+    printf("%d\n", ft_atoi(d));
+    return (0);
 }

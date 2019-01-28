@@ -25,10 +25,13 @@ OBJ = $(SOURCE:.c = .o)
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	ar rc $(NAME) $(OBJ)
+	ar rc $(NAME) $?
 
-$(OBJ): $(SOURCE)
-	gcc -c $(CFLAG) $(SOURCE)
+# $(OBJ): $(SOURCE)
+# 	gcc -c $(CFLAG) $(SOURCE)
+
+# $(NAME): $(OBJ)
+# 	ar rc $(NAME) $(OBJ)
 
 print:
 	echo $(OBJ)
@@ -36,8 +39,10 @@ print:
 clean:
 	rm -f $(OBJ)
 
-fclean: clean
+fclean:
 	rm -f $(NAME)
+# fclean: clean
+	# rm -f $(NAME)
 
 re: fclean all
 
