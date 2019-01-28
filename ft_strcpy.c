@@ -20,20 +20,17 @@
 
 #include "libft.h"
 
-
 char    *ft_strcpy(char *dest, const char *src)
 {
-    return ft_memcpy(dest, src, strlen(src) + 1);
+    return ft_memcpy(dest, src, ft_strlen(src) + 1);
 }
-/*char	*ft_strcpy(char *dst, const char *src)
-{
-	size_t	i;
 
-	i = -1;
-	if (!src)
-		return (NULL);
-	while (src[++i])
-		dst[i] = src[i];
-	dst[i] = '\0';
-	return (dst);
-}*/
+int	main()
+{
+	char *ch;
+	char des[10];
+
+	ch = "abci33 34";
+	printf("%s", ft_strcpy(des, ch));
+	return (0);
+}
