@@ -13,36 +13,18 @@
 #include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
-// {
-// 	char	*ptr1;
-// 	char	*ptr2;
-// 	size_t	i;
-
-// 	ptr1 = (char *)dst;
-// 	ptr2 = (char *)src;
-// 	i = 0;
-// 	if ((ptr1 - ptr2) > 0 && (ptr1 - ptr2) < len)
-// 	{
-// 		while (len-- > 0)
-// 			ptr1[len - 1] = ptr2[len - 1];
-// 	}
-// 	else
-// 	{
-// 		while (i++ < len)
-// 			ptr1[i] = ptr2[i];
-// 	}
-// 	return (ptr1);
-// }
 {
 	char	*csrc = (char *)src;
 	char	*cdest = (char *)dst;
 	char	temp[len];
 	int	i;
 	
-	i = 0;
-	while (i++ < len)
+	printf("the src is %s\n", csrc);
+	printf("the dst is %s\n", cdest);
+	i = -1;
+	while (++i < len)
 		temp[i] = csrc[i];
 	while (i--)
-		cdest[i - 1] = temp[i - 1];
+		cdest[i] = temp[i];
 	return (dst);
 }
