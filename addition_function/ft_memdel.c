@@ -3,7 +3,7 @@
 
 void    ft_memdel(void **ap)
 {
-    if (!*ap || !ap)
+    if (!(*ap) || !ap)
         return (NULL);
     free(*ap);
     *ap =  NULL; 
