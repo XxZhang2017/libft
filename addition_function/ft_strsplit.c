@@ -103,6 +103,5 @@ int main()
         printf("%s\n", reg[i]);
         i++;
     }
-
     return (0);
 }
