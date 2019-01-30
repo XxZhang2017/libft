@@ -1,4 +1,4 @@
-#include "libft.h"
+#include "../libft.h"
 
 void    *ft_memalloc(size_t size)
 {
@@ -8,5 +8,5 @@ void    *ft_memalloc(size_t size)
     if (!reg)
         return (NULL);
     else
-        return (ft_memset(reg, 0, size));
+        return (ft_memset(reg, '\0', size));
 }

@@ -25,12 +25,12 @@ char    *ft_strcpy(char *dest, const char *src)
     return ft_memcpy(dest, src, ft_strlen(src) + 1);
 }
 
-int	main()
-{
-	char *ch;
-	char des[10];
+// int	main()
+// {
+// 	char *ch;
+// 	char des[10];
 
-	ch = "abci33 34";
-	printf("%s", ft_strcpy(des, ch));
-	return (0);
-}
+// 	ch = "abci33 34";
+// 	printf("%s", ft_strcpy(des, ch));
+// 	return (0);
+// }
