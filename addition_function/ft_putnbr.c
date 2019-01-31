@@ -1,6 +1,6 @@
 
 
-#include "libft.h"
+#include "../libft.h"
 
 void    ft_putnbr(int n)
 {
@@ -8,16 +8,18 @@ void    ft_putnbr(int n)
         ft_putchar('0' + n);
     else if (n < 0)
     {
-        write(1, '-', 1);
+        ft_putchar('-');
         ft_putnbr(-n);
     }
     else
     {
-        while (n > 0)
-        {
-            ft_putnbr(n / 10);
-            ft_putchar(n % 10);
-            n /= 10;
-        }
+        ft_putnbr(n / 10);
+        ft_putchar('0' + n % 10);
     }
+}
+int main()
+{
+
+    ft_putnbr(34989);
+    return (0);
 }
