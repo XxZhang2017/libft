@@ -41,28 +41,28 @@ char	*ft_strstr(const char *haystack, const char *needle)
 	return (NULL);
 }
 
-int main() 
-{ 
-    // Take any two strings 
-    char s1[] = "Geeksfor"; 
-    char s2[] = "for"; 
-    char*	p1; 
-	char*	p2;
+// int main() 
+// { 
+//     // Take any two strings 
+//     char s1[] = "Geeksfor"; 
+//     char s2[] = "for"; 
+//     char*	p1; 
+// 	char*	p2;
   
-    // Find first occurence of s2 in s1 
-//    p1 = strstr(s1, s2); 
-	p2 = ft_strstr(s1, s2); 
-    // Prints the result 
-    // if (p1) { 
-    //     printf("String found\n"); 
-    //     printf("First occurrence of string '%s' in '%s' is '%s'", s2, s1, p1); 
-    // } else
-    //     printf("String not found\n"); 
+//     // Find first occurence of s2 in s1 
+// //    p1 = strstr(s1, s2); 
+// 	p2 = ft_strstr(s1, s2); 
+//     // Prints the result 
+//     // if (p1) { 
+//     //     printf("String found\n"); 
+//     //     printf("First occurrence of string '%s' in '%s' is '%s'", s2, s1, p1); 
+//     // } else
+//     //     printf("String not found\n"); 
 	
-	if (p2) { 
-        printf("String found\n"); 
-        printf("First occurrence of string '%s' in '%s' is '%s'", s2, s1, p2); 
-    } else
-        printf("String not found\n"); 
-    return 0; 
-} 
+// 	if (p2) { 
+//         printf("String found\n"); 
+//         printf("First occurrence of string '%s' in '%s' is '%s'", s2, s1, p2); 
+//     } else
+//         printf("String not found\n"); 
+//     return 0; 
+// } 

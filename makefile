@@ -38,10 +38,10 @@ OBJ =  ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memcmp.o\
 		ft_strncmp.o ft_strrchr.o ft_strcmp.o ft_strnstr.o 
 # $(SOURCE:%.c = %.o)
 
-all:	$(OBJ)
+all:	$(NAME)
 
-# $(NAME): $(OBJ)
-# 	ar rc $(NAME) $(OBJ)
+$(NAME): $(OBJ)
+	ar rc $(NAME) $(OBJ)
 
 $(OBJ):	%.o:%.c
 	# gcc -c $< -o $@

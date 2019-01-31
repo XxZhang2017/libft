@@ -22,7 +22,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	printf("the src is %s\n", csrc);
 	printf("the dst is %s\n", cdest);
 	i = -1;
-	while (++i < len)
+	while (++i < (int)len)
 		temp[i] = csrc[i];
 	while (i--)
 		cdest[i] = temp[i];
