@@ -24,7 +24,7 @@ int ft_skip_space(char *ch)
 
 char    *ft_strtrim(char const *s)
 {
-    int index;
+    size_t index;
     size_t total_len;
     int str_len;
     char    *reg;
