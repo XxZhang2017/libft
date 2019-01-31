@@ -1,6 +1,6 @@
 
 //#include "libft.h"
-#include "libft.a"
+#include "libft.h"
 int	 main()
 {
 	ft_strcmp("abc", "ppo");

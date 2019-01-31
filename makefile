@@ -29,15 +29,15 @@ SOURCE = ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memcmp.c\
 		#  addi/ft_itoa.c addi/ft_itoa.c addi/ft_itoa.c addi/ft_itoa.c 
 
 
-OBJ = $(SOURCE:.c = .o)
+# OBJ = $(SOURCE:.c = .o)
 
-all: $(NAME)
+all:	$(OBJ)
 
-$(NAME): $(OBJ)
-	ar rc $(NAME) $?
+# $(NAME): $(OBJ)
+# 	ar rc $(NAME) $(OBJ)
 
-# $(OBJ): $(SOURCE)
-# 	gcc -c $(CFLAG) $(SOURCE)
+$(OBJ):	$(SOURCE)
+	gcc -c $(CFLAG) $(SOURCE)
 
 # $(NAME): $(OBJ)
 # 	ar rc $(NAME) $(OBJ)
@@ -53,6 +53,6 @@ fclean:
 # fclean: clean
 	# rm -f $(NAME)
 
-re: fclean all
+re:	fclean all
 
-.PHONY: clean fclean all re
+.PHONY:	clean fclean all re
