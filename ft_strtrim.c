@@ -25,12 +25,13 @@ int ft_skip_space(char *ch)
 char    *ft_strtrim(char const *s)
 {
     int index;
-    int total_len;
+    size_t total_len;
     int str_len;
     char    *reg;
 
-    reg = ft_strnew(total_len);
     total_len = ft_strlen(s);
+    reg = ft_strnew(total_len);
+    
     index = 0;
     while (index < total_len)
     {
