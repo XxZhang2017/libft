@@ -9,7 +9,7 @@ char    *ft_strmap(char const *s, char(*f)(char))
 
     while (s)
     {
-        if (!f(s))
+        if (!f(*s))
             return (NULL);
         s++;
     }

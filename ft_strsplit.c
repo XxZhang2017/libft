@@ -67,7 +67,7 @@ char    **ft_strsplit(char const *s, char c)
         if (!reg)
             printf("malloc error\n");
 
-		reg[count] = '\0';
+		reg[count] = 0;
 
 //        p_arr(reg);
 	total_len = ft_strlen(s);

@@ -10,4 +10,5 @@ char    *ft_strjoin(char const *s1, char const *s2)
     reg = ft_strnew(len);
     reg = ft_strcat(reg, s1);
     reg = ft_strcat(reg, s2);
+    return (reg);
 }

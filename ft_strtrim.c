@@ -2,7 +2,7 @@
 
 #include "libft.h"
 
-int ft_search(char *ch);
+int ft_search(char *ch)
 {
     int i;
 
@@ -12,7 +12,7 @@ int ft_search(char *ch);
     return (i);
 }
 
-int ft_skip_space(char *ch);
+int ft_skip_space(char *ch)
 {
     int i;
 
@@ -34,9 +34,9 @@ char    *ft_strtrim(char const *s)
     index = 0;
     while (index < total_len)
     {
-        str_len = ft_search(&s[index]);
+        str_len = ft_search(((char *)&s[index]);
         ft_strncat(reg, &s[index], str_len);
-        index += str_len + ft_skip_space(&s[index]);
+        index += str_len + ft_skip_space((char *)&s[index]);
     }
     return (reg);
 }
