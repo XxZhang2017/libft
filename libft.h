@@ -17,7 +17,7 @@
 #include <ctype.h>
 #include <stdlib.h>
 #include <stdio.h>
-
+#include <unistd.h>
 
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
@@ -57,6 +57,18 @@ int ft_toupper(int c);
 int ft_tolower(int c);
 
 void    *ft_memalloc(size_t size);
+void    ft_memdel(void **ap);
 char    *ft_strnew(size_t size);
 
+
+void    ft_strmapi(char *s, void (*f)(unsigned int, char*));
+char    *ft_strmap(char const *s, char(*f)(char));
+char    **ft_strsplit(char const *s, char c);
+int ft_strnequ(char const *s1, char const *s2, size_t n);
+char    *ft_strtrim(char const *s);
+char    *ft_strsub(char const *s, unsigned int start, size_t len);
+
+char    *ft_itoa(int n);
+void    ft_putendl(char const *s);
+void    ft_putstr(char const *s);
 #endif
