@@ -18,7 +18,7 @@ SOURCE = ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memcmp.c\
 		ft_strdup.c ft_strchr.c ft_strstr.c ft_atoi.c \
 		ft_isdigit.c ft_isprint.c ft_isascii.c ft_isalpha.c ft_toupper.c \
 		ft_tolower.c ft_strncpy.c ft_isalnum.c ft_strncat.c ft_strlcat.c ft_strncmp.c ft_strrchr.c ft_strcmp.c ft_strnstr.c ft_itoa.c ft_strdel.c ft_strclr.c ft_strequ.c \
-		 ft_striter.c ft_itoa.c ft_strdel.c \
+		 ft_striter.c ft_itoa.c ft_strdel.c ft_memalloc.c ft_memdel.c \
 		 ft_strclr.c ft_strequ.c ft_striter.c \
 		 ft_striteri.c ft_strjoin.c ft_strmap.c \
 		 ft_strmapi.c ft_strnequ.c ft_strnew.c \
@@ -35,7 +35,7 @@ OBJ =  ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memcmp.o\
 		ft_tolower.o ft_strncpy.o ft_isalnum.o ft_strncat.o ft_strlcat.o ft_strncmp.o ft_strrchr.o ft_strcmp.o ft_strnstr.o ft_itoa.o \
 		 ft_strdel.o ft_strclr.o ft_strequ.o \
 		 ft_striter.o ft_itoa.o ft_strdel.o \
-		 ft_strclr.o ft_strequ.o ft_striter.o \
+		 ft_strclr.o ft_strequ.o ft_striter.o ft_memalloc.o ft_memdel.o \
 		 ft_striteri.o ft_strjoin.o ft_strmap.o \
 		 ft_strmapi.o ft_strnequ.o ft_strnew.o \
 		 ft_strsplit.o ft_strsub.o ft_strtrim.o
