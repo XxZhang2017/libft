@@ -54,13 +54,10 @@ $(OBJ):	%.o:%.c
 # $(NAME): $(OBJ)
 # 	ar rc $(NAME) $(OBJ)
 
-print:
-	echo $(OBJ)
-
 clean:
 	rm -f $(OBJ)
 
-fclean:
+fclean:	clean
 	rm -f $(NAME)
 # fclean: clean
 	# rm -f $(NAME)
