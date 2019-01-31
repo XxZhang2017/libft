@@ -1,6 +1,6 @@
 
 
-#include "../libft.h"
+#include "libft.h"
 
 void    ft_strmapi(char *s, void (*f)(unsigned int, char*))
 {

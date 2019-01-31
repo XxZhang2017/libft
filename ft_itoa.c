@@ -1,6 +1,6 @@
 
 
-#include "../libft.h"
+#include "libft.h"
 
 int get_num_len(int n)
 {

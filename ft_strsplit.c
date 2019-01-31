@@ -1,6 +1,6 @@
 
 
-#include "../libft.h"
+#include "libft.h"
 
 void    p_arr(char **reg);
 
@@ -88,20 +88,20 @@ char    **ft_strsplit(char const *s, char c)
         return (reg);
 }
 
-int main()
-{
-    char *word = "**am*in****class*";
-    char **reg;
+// int main()
+// {
+//     char *word = "**am*in****class*";
+//     char **reg;
 
-    reg = ft_strsplit(word, '*');
-    int i;
+//     reg = ft_strsplit(word, '*');
+//     int i;
 
-    printf("print result\n");
-    i = 0;
-    while (i < 3)
-    {
-        printf("%s\n", reg[i]);
-        i++;
-    }
-    return (0);
-}
+//     printf("print result\n");
+//     i = 0;
+//     while (i < 3)
+//     {
+//         printf("%s\n", reg[i]);
+//         i++;
+//     }
+//     return (0);
+// }

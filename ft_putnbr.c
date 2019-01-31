@@ -1,6 +1,6 @@
 
 
-#include "../libft.h"
+#include "libft.h"
 
 void    ft_putnbr(int n)
 {
@@ -17,9 +17,9 @@ void    ft_putnbr(int n)
         ft_putchar('0' + n % 10);
     }
 }
-int main()
-{
+// int main()
+// {
 
-    ft_putnbr(34989);
-    return (0);
-}
+//     ft_putnbr(34989);
+//     return (0);
+// }

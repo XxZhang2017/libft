@@ -1,6 +1,6 @@
 
 
-#include "../libft.h"
+#include "libft.h"
 
 int ft_search(char *ch);
 {
@@ -41,11 +41,11 @@ char    *ft_strtrim(char const *s)
     return (reg);
 }
 
-int main()
-{
-    char    *ch = "abc   990   ppp";
-    printf("%s\n", ch);
-    printf("%s\n", ft_strtrim(ch));
+// int main()
+// {
+//     char    *ch = "abc   990   ppp";
+//     printf("%s\n", ch);
+//     printf("%s\n", ft_strtrim(ch));
 
-    return (0);
-}
+//     return (0);
+// }
