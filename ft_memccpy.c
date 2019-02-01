@@ -25,21 +25,8 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	{
 		ptr1[i] = ptr2[i];
 		if (ptr2[i] == (unsigned char)c)
-			return (ptr2 + i + 1);
+			return (ptr1 + i + 1);
 		i++;
 	}
 	return (NULL);
 }
-
-
-
-// int main () {
-//    const char src[50] = "this is a good nyancat !";
-//    char dest[50];
-//    strcpy(dest,"Heloooo!!");
-//    printf("Before memcpy dest = %s\n", dest);
-//    ft_memccpy(NULL, src, 0, strlen(src)+1);
-//    printf("After memcpy dest = %s\n", dest);
-   
-//    return(0);
-// }
