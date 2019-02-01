@@ -22,7 +22,17 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (++i < n)
 	{
 		if (ptr1[i] == (unsigned char)c)
-			return (ptr1 + i + 1);
+			return (ptr1 + i);
 	}
 	return (NULL);
 }
+
+// int main()
+// {
+// 	char			*src = "/|\x12\xff\x09\x42\042\42|\\";
+// 	int				size = 10;
+
+// 	if (memchr(src, '\x42', size) == ft_memchr(src, '\x42', size))
+// 		printf("pass\n");
+// 	return (0);
+// }
