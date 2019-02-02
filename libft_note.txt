@@ -24,3 +24,6 @@ strstr: place i++ in while condition diff place i++ out of condition
 Vs      while (i)
             i++;
 if i is index of the string, it affect the ele refered to in the arr
+
+strrchr: search should start from the end, null terminal symbol.
+    note: i = strlen(s) + 1
