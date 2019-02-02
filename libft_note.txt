@@ -6,3 +6,13 @@ strnew: '\0' terminated
 
 void ft_striteri(char *s, void (*f)(unsigned int, char *));
 char * ft_strmapi(char const *s, char (*f)(unsigned int, char));
+
+
+
+strlcat: src may be not NULL-terminated
+strncpy: if size less then src, dst may not append NULL
+
+strlcat should be secure which means dst should be NULL terminated
+
+strchr: search '\0'. 
+    condition: reaching the end of the string, 
