@@ -16,3 +16,11 @@ strlcat should be secure which means dst should be NULL terminated
 
 strchr: search '\0'. 
     condition: reaching the end of the string, 
+
+
+strstr: place i++ in while condition diff place i++ out of condition
+        while (i++)
+            ;
+Vs      while (i)
+            i++;
+if i is index of the string, it affect the ele refered to in the arr
