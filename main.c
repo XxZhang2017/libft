@@ -3,15 +3,14 @@
 #include "libft.h"
 int main() 
 { 
-//    char	*src = "there is so \0ma\0ny \0 \\0 in t\0his stri\0ng !\0\0\0\0";
+char	*n = "945";
 
-// 			char	*d1 = strrchr(src, '\0');
-// 			char	*d2 = ft_strrchr(src, '\0');
-// 			printf("d1 is %s\n", d1);
-// 			printf("d2 is %s\n", d2);
-// 			if (d1 == d2)
-// 				printf("pass\n");
-	const char *string = "This is a large text";
-printf("%zu %zu\n", strlen(string), sizeof(string));
+			int		i1 = atoi(n);
+			int		i2 = ft_atoi(n);
+			printf("atoi return %d\n", i1);
+			printf("ft_atoi return %d\n", i2);
+			if (i1 == i2)
+				printf("success\n");
+
 			return (0);
 } 
