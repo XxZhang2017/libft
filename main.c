@@ -3,7 +3,7 @@
 #include "libft.h"
 int main() 
 { 
-char	*n = "945";
+char	*n = "\t\v\f\r\n \f-06050";
 
 			int		i1 = atoi(n);
 			int		i2 = ft_atoi(n);
