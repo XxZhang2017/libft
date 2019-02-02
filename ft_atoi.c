@@ -22,14 +22,12 @@ int ft_atoi(const char *str)
     else if (*str == '+')
         str++;
     i = ft_strlen(str);
-    printf("the string length is %d\n", i);
     while (--i >= 0)
     {
         if (ft_isdigit(str[i]))
         {
             reg *= 10;
             reg += str[i] - '0';
-            printf("the reg is %d\n", reg);
         }
         else
             return (reg * flag);
