@@ -24,3 +24,7 @@ strstr: place i++ in while condition diff place i++ out of condition
 Vs      while (i)
             i++;
 if i is index of the string, it affect the ele refered to in the arr
+
+
+ft_atoi:
+it should loop from begin to the end
