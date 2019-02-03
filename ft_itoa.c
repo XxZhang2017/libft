@@ -28,6 +28,8 @@ char    *ft_itoa(int n)
     int counter;
     int len_num;
 
+    if (n == -2147483648)
+        return "-2147483648";
     len_num = get_num_len(n);
 //    printf("the length of num %d\n", len_num);
     reg = ft_strnew(len_num);

@@ -10,10 +10,9 @@
 
 int main()
 { 
-			int		i = INT_MIN;
+			char	*i1 = ft_itoa(INT_MIN);
+			printf("%s\n", i1);
 
-			
-			ft_putnbr_fd(i,1);
 			return (0);
 }
 	// char	*str = STRING_1;//"the cake is a lie !\0I'm hidden lol\r\n"
