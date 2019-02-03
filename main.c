@@ -10,18 +10,10 @@
 
 int main() 
 { 
-	char	*s1 = "MZIRIBMZIRIBMZE123";
-			char	*s2 = "MZIRIBMZE";
-			size_t	max = strlen(s2);
+			int		i = INT_MIN;
 
-			char	*i1 = strnstr(s1, s2, max);
-			char	*i2 = ft_strnstr(s1, s2, max);
-
-			printf("strnstr return %s\n", i1);
-			printf("ft_strnstr return %s\n", i2);
-
-			if (i1 == i2)
-				printf("success\n");
+			
+			ft_putnbr_fd(i,1);
 			return (0);
 
 	// char	*str = STRING_1;//"the cake is a lie !\0I'm hidden lol\r\n"

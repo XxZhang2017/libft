@@ -4,7 +4,11 @@
 
 void    ft_putnbr(int n)
 {
-    if (n >= 0 && n < 10)
+    if (n == -2147483648)
+	{
+        write(1, "-2147483648", 11);
+	}
+    else if (n >= 0 && n < 10)
         ft_putchar('0' + n);
     else if (n < 0)
     {
