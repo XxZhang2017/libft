@@ -60,12 +60,14 @@ char    **ft_strsplit(char const *s, char c)
 	int	count;
     char    **reg;
 	
+        if (!s)
+            return (NULL);
 		count = ft_get_word((char *)s, c);
-        printf("the words are : %d\n", count);
+//        printf("the words are : %d\n", count);
 		reg = (char **)malloc(sizeof(char *) * (count + 1));
     
         if (!reg)
-            printf("malloc error\n");
+            return (NULL);
 
 		reg[count] = 0;
 

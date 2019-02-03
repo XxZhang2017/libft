@@ -33,6 +33,8 @@ char    *ft_itoa(int n)
     len_num = get_num_len(n);
 //    printf("the length of num %d\n", len_num);
     reg = ft_strnew(len_num);
+    if (!reg)
+        return (NULL);
     counter = 0;
     if (n == 0)
         reg[0] = '0';

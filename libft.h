@@ -85,4 +85,9 @@ void    ft_putstr_fd(char const *s, int fd);
 void    ft_putchar_fd(char c, int fd);
 void    ft_putnbr_fd(int n, int fd);
 
+void    ft_striter(char *s, void (*f)(char *));
+void    ft_striteri(char *s, void (*f)(unsigned int, char*));
+char    *ft_strmap(char const *s, char(*f)(char));
+void    ft_strmapi(char *s, void (*f)(unsigned int, char*));
+
 #endif
