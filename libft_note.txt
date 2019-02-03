@@ -25,5 +25,11 @@ Vs      while (i)
             i++;
 if i is index of the string, it affect the ele refered to in the arr
 
+<<<<<<< HEAD
 strrchr: search should start from the end, null terminal symbol.
     note: i = strlen(s) + 1
+=======
+
+ft_atoi:
+it should loop from begin to the end
+>>>>>>> b8bfb8f5f89aea76980c2e53468969d2f6bf104f

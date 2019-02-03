@@ -8,14 +8,14 @@
 #define		STRING_2	"there is no stars in the sky"
 #define		STRING_3	"test basic !"
 
-int main() 
+int main()
 { 
 			int		i = INT_MIN;
 
 			
 			ft_putnbr_fd(i,1);
 			return (0);
-
+}
 	// char	*str = STRING_1;//"the cake is a lie !\0I'm hidden lol\r\n"
 	// 		char	buff1[0xF00] = STRING_2;//"there is no stars in the sky"
 	// 		char	buff2[0xF00] = STRING_2;
@@ -29,7 +29,19 @@ int main()
 	// 		if (!strcmp(buff1, buff2))
 	// 			printf("success\n");
 	// 		return (0);
-} 
+
+// {
+// 	char	*s1 = "oh no not the empty string !";
+// 			char	*s2 = "";
+
+// 			char	*i1 = strstr(s1, s2);
+// 			char	*i2 = ft_strstr(s1, s2);
+// 	printf("s1 is %s\n", s1);
+// 	printf("s2 is %s\n", s2);
+// 	if (i1 == i2)
+// 		printf("success\n");
+
+// } 
 
 
 	// char	n[40] = "99999999999999999999999999";
