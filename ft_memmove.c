@@ -18,13 +18,13 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	char	*cdest = (char *)dst;
 	int	i;
 	
-	if (cdest - csrc < (long)len)
+	if (cdest - csrc > 0) //cdest - csrc < 0
 	{
 		i = (int)len;
 		while (i >= 1)
 		{
-			cdest[i] = csrc[i];
 			i--;
+			cdest[i] = csrc[i];		
 		} 
 	}
 	else
@@ -38,49 +38,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
-
-//reference code:
-// void	*ft_memmove(void *dst, const void *src, size_t len)
-// {
-// 	char	*srcc;
-// 	char	*dstc;
-// 	size_t	i;
-
-// 	i = -1;
-// 	srcc = (char *)src;
-// 	dstc = (char *)dst;
-// 	if (srcc < dstc)
-// 		while ((int)(--len) >= 0)
-// 			*(dstc + len) = *(srcc + len);
-// 	else
-// 		while (++i < len)
-// 			*(dstc + i) = *(srcc + i);
-// 	return (dst);
-// }
-// int main()
-// {
-// 	int		size = 128 * 1024 * 1024;
-
-// 	printf("start malloc\n");
-// 	char	*dst = (char *)malloc(sizeof(char) * (size + 1));
-// 	char	*data = (char *)malloc(sizeof(char) * (size + 1));
-// 	printf("malloc finished\n");
-// 	memset(data, 'A', size);
-// 	printf("memset finished\n");
-
-// 	data[size] = '\0';
-
-
-// 	if (!dst)
-// 		exit(1);
-// 	if (!data)
-// 		exit(1);
-	
-// //	dst[size] = '\0';
-// 	printf("the data buffer:\n");
-// 	printf("%lu\n", strlen(data));
-
-// 	memmove(dst, data, size);
-// 	printf("the dst data:\n%lu\n",strlen(dst));
-// 	return (0);
-// }
