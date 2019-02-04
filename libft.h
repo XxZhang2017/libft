@@ -104,8 +104,9 @@ char	*ft_strjoin(char const *s1, char const *s2);
 void	ft_strclr(char *s);
 
 
-int ft_skip_sym((char *)&s[index], c);
+int ft_skip_sym(char *a, c);
 char    *ft_strndup(const char *s1, size_t n);
 int ft_search_sym(char *ch, int sym);
 int ft_gwn_byc(char *ch, int c);
+int     ft_isspace(char a);
 #endif
