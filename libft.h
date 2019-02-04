@@ -102,4 +102,9 @@ t_list * ft_lstmap(t_list *lst, t_list * (*f)(t_list *elem));
 
 char	*ft_strjoin(char const *s1, char const *s2);
 void	ft_strclr(char *s);
+
+
+int ft_skip_sym((char *)&s[index], c);
+char    *ft_strndup(const char *s1, size_t n);
+int ft_search_sym(char *ch, int sym)
 #endif

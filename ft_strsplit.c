@@ -2,33 +2,28 @@
 
 #include "libft.h"
 
-void    p_arr(char **reg);
+// int ft_search_sym(char *ch, int sym)
+// {
+//     int i;
 
-int ft_search_sym(char *ch, int sym)
-{
-    int i;
+//     i = 0;
+//     while (*ch && *ch != sym)
+//     {
+//         ch++;
+//         i++;
+//     }    
+//     return (i);
+// }
 
-    i = 0;
-    while (*ch && *ch != sym)
-    {
-        ch++;
-        i++;
-    }    
-    return (i);
-}
+// int ft_skip_sym(char *ch, int sym)
+// {
+//     int i;
 
-int ft_skip_sym(char *ch, int sym)
-{
-    int i;
-
-    i = 0;
-    while (ch && ch[i] == sym)
-    {
-//        ch++;
-        i++;
-    }
-    return (i);
-}
+//     i = 0;
+//     while (ch && ch[i] == sym)
+//         i++;
+//     return (i);
+// }
 
 int ft_get_word(char *ch, int c)
 {
