@@ -25,26 +25,26 @@
 //     return (i);
 // }
 
-int ft_get_word(char *ch, int c)
-{
-    int count;
-    int state;
+// int ft_get_word(char *ch, int c)
+// {
+//     int count;
+//     int state;
 
-    state = 0;
-    count = 0;
-    while (*ch)
-    {
-        if (*ch == c)
-            state = 1;
-        else if (state == 1)
-        {
-            state = 0;
-            count++;
-        }
-        ch++;
-    }
-    return (count);
-}
+//     state = 0;
+//     count = 0;
+//     while (*ch)
+//     {
+//         if (*ch == c)
+//             state = 1;
+//         else if (state == 1)
+//         {
+//             state = 0;
+//             count++;
+//         }
+//         ch++;
+//     }
+//     return (count);
+// }
 
 char    **ft_strsplit(char const *s, char c)
 {
@@ -57,7 +57,7 @@ char    **ft_strsplit(char const *s, char c)
 	
         if (!s)
             return (NULL);
-		count = ft_get_word((char *)s, c);
+		count = ft_gwn_byc((char *)s, c);
 //        printf("the words are : %d\n", count);
 		reg = (char **)malloc(sizeof(char *) * (count + 1));
     
