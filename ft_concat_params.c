@@ -6,12 +6,10 @@
 /*   By: xinzhang <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/02 20:59:54 by xinzhang          #+#    #+#             */
-/*   Updated: 2018/08/02 23:25:27 by xinzhang         ###   ########.fr       */
+/*   Updated: 2019/02/04 00:24:48 by xinzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
 char	*ft_strcat(char *dest, char *src)
 {
 	while (*dest)
