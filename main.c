@@ -10,8 +10,12 @@
 
 int main()
 {
-	int i = -2147483648;
-	ft_putnbr(i);
+	char	*str1;
+	char	*str2;
+
+	str1 = "str1";
+	str2 = NULL;
+	strlcat(str1, str2, 4);
 	return (0);
 }
 // int main()

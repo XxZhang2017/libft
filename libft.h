@@ -109,4 +109,5 @@ char    *ft_strndup(const char *s1, size_t n);
 int ft_search_sym(char *ch, int sym);
 int ft_gwn_byc(char *ch, int c);
 int     ft_isspace(char a);
+int ft_get_num_len(int n);
 #endif

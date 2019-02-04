@@ -20,8 +20,6 @@ char	*ft_strstr(const char *haystack, const char *needle)
 
 	i = 0;
 	j = 0;
-	if (!haystack || !needle)
-		return  (NULL);
 	if (needle && !ft_strlen(needle))
 		return ((char *)haystack);
 	while (haystack[i] && needle[j])

@@ -12,25 +12,7 @@
 
 #include "libft.h"
 
-int get_num_len(int n)
-{
-    int len;
 
-    len = 0;
-    if (n == 0)
-        return (1);
-    if (n < 0)
-    {
-        n = -n;
-        len++;
-    }
-    while (n > 0)
-    {
-        len++;
-        n /= 10;
-    }
-    return (len);
-}
 
 char    *ft_itoa(int n)
 {
@@ -38,10 +20,7 @@ char    *ft_itoa(int n)
     int counter;
     int len_num;
 
-    // if (n == -2147483648)
-    //     return "-2147483648";
-    len_num = get_num_len(n);
-//    printf("the length of num %d\n", len_num);
+    len_num = ft_get_num_len(n);
     reg = ft_strnew(len_num);
     if (!reg)
         return (NULL);
@@ -65,8 +44,3 @@ char    *ft_itoa(int n)
     }
     return (reg);
 }
-
-// int main()
-// {
-//     printf("%s\n", ft_itoa(0));
-// }

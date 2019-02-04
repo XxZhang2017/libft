@@ -24,7 +24,8 @@ SOURCE = ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memcmp.c\
 		ft_strsub.c ft_strtrim.c ft_putchar.c ft_putstr.c ft_putendl.c \
 		ft_putnbr.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c \
 		ft_lstadd.c ft_lstdel.c ft_lstdelone.c ft_lstiter.c ft_lstnew.c ft_countwords.c \
-		ft_skip_sym.c ft_strndup.c ft_search_sym.c ft_gwn_byc.c ft_isspace.c
+		ft_skip_sym.c ft_strndup.c ft_search_sym.c ft_gwn_byc.c ft_isspace.c \
+		ft_get_num_len.c ft_lstmap.c
 		#  addi/ft_itoa.c addi/ft_itoa.c addi/ft_itoa.c addi/ft_itoa.c 
 		#  addi/ft_itoa.c addi/ft_itoa.c addi/ft_itoa.c addi/ft_itoa.c 
 
@@ -41,7 +42,8 @@ OBJ =  ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memcmp.o\
 		ft_putstr.o ft_putendl.o ft_putnbr.o ft_putchar_fd.o ft_putstr_fd.o \
 		ft_putendl_fd.o ft_putnbr_fd.o ft_lstadd.o ft_lstdel.o ft_lstdelone.o \
 		ft_lstiter.o ft_lstnew.o ft_countwords.o \
-		ft_skip_sym.o ft_strndup.o ft_search_sym.o ft_gwn_byc.o ft_isspace.o 
+		ft_skip_sym.o ft_strndup.o ft_search_sym.o ft_gwn_byc.o ft_isspace.o \
+		ft_get_num_len.o ft_lstmap.o
 		
 # $(SOURCE:%.c = %.o)
 

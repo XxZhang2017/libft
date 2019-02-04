@@ -14,7 +14,6 @@
 
 void    ft_putnbr_fd(int n, int fd)
 {
-    printf("the number is %d\n", n);
     if (n == -2147483648)
 	{
         write(fd, "-2147483648", 11);
