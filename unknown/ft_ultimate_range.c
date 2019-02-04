@@ -6,12 +6,10 @@
 /*   By: xinzhang <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/02 16:59:04 by xinzhang          #+#    #+#             */
-/*   Updated: 2018/08/02 17:34:59 by xinzhang         ###   ########.fr       */
+/*   Updated: 2019/02/04 10:40:23 by xinzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
 int		ft_ultimate_range(int **range, int min, int max)
 {
 	int	*ptr;
