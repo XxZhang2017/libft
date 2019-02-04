@@ -30,3 +30,16 @@ strrchr: search should start from the end, null terminal symbol.
 
 ft_atoi:
 it should loop from begin to the end
+
+
+
+
+?how to make putchar work with unicode and wild character?
+?itoa, min-int crash, why?
+?imporve, atoi overflow for int
+
+note:
+strnew, auto assign terminal, only pass the len of the
+string
+strsub, strcopy, strncopy, strcat, strlcat,
+double think about it

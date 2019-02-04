@@ -23,7 +23,7 @@ SOURCE = ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memcmp.c\
 		ft_strmap.c ft_strmapi.c ft_strnequ.c ft_strnew.c ft_strsplit.c \
 		ft_strsub.c ft_strtrim.c ft_putchar.c ft_putstr.c ft_putendl.c \
 		ft_putnbr.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c \
-		
+		ft_lstadd.c ft_lstdel.c ft_lstdelone.c ft_lstiter.c ft_lstnew.c
 		#  addi/ft_itoa.c addi/ft_itoa.c addi/ft_itoa.c addi/ft_itoa.c 
 		#  addi/ft_itoa.c addi/ft_itoa.c addi/ft_itoa.c addi/ft_itoa.c 
 
@@ -38,7 +38,8 @@ OBJ =  ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memcmp.o\
 		ft_striteri.o ft_strjoin.o ft_strmap.o ft_strmapi.o ft_strnequ.o \
 		ft_strnew.o ft_strsplit.o ft_strsub.o ft_strtrim.o ft_putchar.o \
 		ft_putstr.o ft_putendl.o ft_putnbr.o ft_putchar_fd.o ft_putstr_fd.o \
-		ft_putendl_fd.o ft_putnbr_fd.o \
+		ft_putendl_fd.o ft_putnbr_fd.o ft_lstadd.o ft_lstdel.o ft_lstdelone.o \
+		ft_lstiter.o ft_lstnew.o 
 		
 # $(SOURCE:%.c = %.o)
 

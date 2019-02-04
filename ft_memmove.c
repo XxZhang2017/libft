@@ -14,23 +14,49 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	printf("start memmove\n");
 	char	*csrc = (char *)src;
 	char	*cdest = (char *)dst;
-	char	temp[len];
 	int	i;
 	
-//	printf("the src is %s\n", csrc);
-//	printf("the dst is %s\n", cdest);
-	i = -1;
-	while (++i < (int)len)
-		temp[i] = csrc[i];
-	while (i--)
-		cdest[i] = temp[i];
+	if (cdest - csrc < (long)len)
+	{
+		i = (int)len;
+		while (i >= 1)
+		{
+			cdest[i] = csrc[i];
+			i--;
+		} 
+	}
+	else
+	{
+		i = 0;
+		while (i < (int)len)
+		{
+			cdest[i] = csrc[i];
+			i++;
+		}
+	}
 	return (dst);
 }
 
+//reference code:
+// void	*ft_memmove(void *dst, const void *src, size_t len)
+// {
+// 	char	*srcc;
+// 	char	*dstc;
+// 	size_t	i;
 
+// 	i = -1;
+// 	srcc = (char *)src;
+// 	dstc = (char *)dst;
+// 	if (srcc < dstc)
+// 		while ((int)(--len) >= 0)
+// 			*(dstc + len) = *(srcc + len);
+// 	else
+// 		while (++i < len)
+// 			*(dstc + i) = *(srcc + i);
+// 	return (dst);
+// }
 // int main()
 // {
 // 	int		size = 128 * 1024 * 1024;
