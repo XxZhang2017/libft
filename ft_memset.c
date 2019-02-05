@@ -6,7 +6,7 @@
 /*   By: xinzhang <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/24 16:21:30 by xinzhang          #+#    #+#             */
-/*   Updated: 2019/02/04 00:30:02 by xinzhang         ###   ########.fr       */
+/*   Updated: 2019/02/05 10:53:10 by xinzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,6 @@ void	*ft_memset(void *b, int c, size_t len)
 	while (i < len && ptr)
 	{
 		*(ptr + i++) = c;
-	}	
+	}
 	return (b);
 }

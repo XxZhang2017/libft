@@ -6,14 +6,14 @@
 /*   By: xinzhang <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/04 00:32:58 by xinzhang          #+#    #+#             */
-/*   Updated: 2019/02/04 00:33:01 by xinzhang         ###   ########.fr       */
+/*   Updated: 2019/02/05 11:09:59 by xinzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_strclr(char *s)
+void	ft_strclr(char *s)
 {
-    if (s)
+	if (s)
 		ft_bzero(s, ft_strlen(s));
 }

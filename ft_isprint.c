@@ -6,13 +6,13 @@
 /*   By: xinzhang <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/04 00:26:53 by xinzhang          #+#    #+#             */
-/*   Updated: 2019/02/04 00:26:58 by xinzhang         ###   ########.fr       */
+/*   Updated: 2019/02/05 11:10:45 by xinzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
-    return (c >= 32 && c < 127);
+	return (c >= 32 && c < 127);
 }

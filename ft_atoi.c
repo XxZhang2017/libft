@@ -6,48 +6,17 @@
 /*   By: xinzhang <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/04 00:23:32 by xinzhang          #+#    #+#             */
-/*   Updated: 2019/02/04 00:23:45 by xinzhang         ###   ########.fr       */
+/*   Updated: 2019/02/05 11:08:44 by xinzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// int ft_atoi(const char *str)
-// {
-//     int reg;
-//     int flag;
-
-//     reg = 0;
-//     flag = 1;
-//     while (str && (*str == ' ' || *str == '\t' || *str == '\f'
-//     || *str == '\v' || *str == '\r' || *str == '\n'))
-//         str++;
-//     if (*str == '-')
-//     {
-//         flag = -1;
-//         str++;
-//     }    
-//     else if (*str == '+')
-//         str++;
-//     while (*str)
-//     {
-//         if (ft_isdigit(*str))
-//         {
-//             reg *= 10;
-//             reg += *str - '0';
-//         }
-//         else
-//             return (reg * flag);  
-//         str++;     
-//     }
-//     return (reg * flag);
-// }
-
 int		ft_atoi(const char *str)
 {
-	int		i;
-	int		num;
-	int		sign;
+	int	i;
+	int	num;
+	int	sign;
 
 	i = 0;
 	num = 0;

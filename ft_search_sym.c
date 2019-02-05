@@ -6,21 +6,21 @@
 /*   By: xinzhang <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/04 00:32:12 by xinzhang          #+#    #+#             */
-/*   Updated: 2019/02/04 00:32:14 by xinzhang         ###   ########.fr       */
+/*   Updated: 2019/02/05 11:16:42 by xinzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_search_sym(char *ch, int sym)
+int	ft_search_sym(char *ch, int sym)
 {
-    int i;
+	int i;
 
-    i = 0;
-    while (*ch && *ch != sym)
-    {
-        ch++;
-        i++;
-    }    
-    return (i);
+	i = 0;
+	while (*ch && *ch != sym)
+	{
+		ch++;
+		i++;
+	}
+	return (i);
 }

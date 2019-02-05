@@ -6,32 +6,14 @@
 /*   By: xinzhang <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/25 17:06:18 by xinzhang          #+#    #+#             */
-/*   Updated: 2019/02/04 00:32:35 by xinzhang         ###   ########.fr       */
+/*   Updated: 2019/02/05 11:00:51 by xinzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_strcat(char *dest, const char *src)
+char	*ft_strcat(char *dest, const char *src)
 {
-    ft_strcpy(dest + ft_strlen(dest), src);
-    return (dest);
+	ft_strcpy(dest + ft_strlen(dest), src);
+	return (dest);
 }
-
-/*char	*ft_strcat(char *s1, const char *s2)
-{
-	size_t	i;
-	size_t	j;
-
-	if (!s1)
-		return (NULL);
-	if (!s2)
-		return (s1);
-	i = 0;
-	j = 0;
-	while (s1[i])
-		i++;
-	while (s2[j])
-		s1[i++] = s2[j++];
-	return (s1);
-}*/
