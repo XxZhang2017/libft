@@ -6,25 +6,11 @@
 /*   By: xinzhang <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/04 10:34:15 by xinzhang          #+#    #+#             */
-/*   Updated: 2019/02/04 10:34:17 by xinzhang         ###   ########.fr       */
+/*   Updated: 2019/02/05 12:53:27 by xinzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// void    ft_strmapi(char *s, void (*f)(unsigned int, char*))
-// {
-//     unsigned int i;
-
-//     if (!s)
-//         return ;
-//     i = 0;
-//     while (s[i])
-//     {
-//         f(i, &s[i]);
-//         i++;
-//     }    
-// }
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
