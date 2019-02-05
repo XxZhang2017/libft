@@ -6,14 +6,14 @@
 /*   By: xinzhang <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/04 00:31:00 by xinzhang          #+#    #+#             */
-/*   Updated: 2019/02/04 00:31:01 by xinzhang         ###   ########.fr       */
+/*   Updated: 2019/02/05 13:05:18 by xinzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_putendl(char const *s)
+void	ft_putendl(char const *s)
 {
-    ft_putstr(s);
-    write(1, "\n", 1);
+	ft_putstr(s);
+	write(1, "\n", 1);
 }
