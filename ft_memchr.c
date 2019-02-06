@@ -6,16 +6,16 @@
 /*   By: xinzhang <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/25 11:58:48 by xinzhang          #+#    #+#             */
-/*   Updated: 2019/02/04 00:29:16 by xinzhang         ###   ########.fr       */
+/*   Updated: 2019/02/05 18:59:58 by xinzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+void				*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	*ptr1;
-	size_t	i;
+	size_t			i;
 
 	i = -1;
 	ptr1 = (unsigned char *)s;
@@ -26,13 +26,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-
-// int main()
-// {
-// 	char			*src = "/|\x12\xff\x09\x42\042\42|\\";
-// 	int				size = 10;
-
-// 	if (memchr(src, '\x42', size) == ft_memchr(src, '\x42', size))
-// 		printf("pass\n");
-// 	return (0);
-// }

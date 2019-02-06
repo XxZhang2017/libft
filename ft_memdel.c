@@ -6,17 +6,16 @@
 /*   By: xinzhang <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/04 00:29:42 by xinzhang          #+#    #+#             */
-/*   Updated: 2019/02/04 00:29:45 by xinzhang         ###   ########.fr       */
+/*   Updated: 2019/02/05 18:58:14 by xinzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
 
-void    ft_memdel(void **ap)
+void	ft_memdel(void **ap)
 {
-    if (!ap || !(*ap))
-        return ;
-    free(*ap);
-    *ap =  NULL; 
+	if (!ap || !(*ap))
+		return ;
+	free(*ap);
+	*ap = NULL;
 }

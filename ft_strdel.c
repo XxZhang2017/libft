@@ -6,15 +6,15 @@
 /*   By: xinzhang <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/04 10:30:19 by xinzhang          #+#    #+#             */
-/*   Updated: 2019/02/04 10:30:21 by xinzhang         ###   ########.fr       */
+/*   Updated: 2019/02/05 18:57:15 by xinzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_strdel(char **as)
+void	ft_strdel(char **as)
 {
-    if (!as || !(*as))
-        return ;
-    ft_memdel((void **)as);
+	if (!as || !(*as))
+		return ;
+	ft_memdel((void **)as);
 }

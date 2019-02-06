@@ -6,21 +6,19 @@
 /*   By: xinzhang <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/04 00:25:17 by xinzhang          #+#    #+#             */
-/*   Updated: 2019/02/04 00:25:23 by xinzhang         ###   ########.fr       */
+/*   Updated: 2019/02/05 19:07:31 by xinzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_gwn_byc(char *ch, int c)
+int	ft_gwn_byc(char *ch, int c)
 {
-	int i;
-    int count;
+	int	i;
+	int	count;
 
 	i = 0;
-    count = 0;
-	if (!ch)
-		return (0);
+	count = 0;
 	while (ch[i])
 	{
 		if (ch[i] == c)

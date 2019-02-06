@@ -6,7 +6,7 @@
 /*   By: xinzhang <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/25 10:32:10 by xinzhang          #+#    #+#             */
-/*   Updated: 2019/02/04 00:29:31 by xinzhang         ###   ########.fr       */
+/*   Updated: 2019/02/05 18:58:57 by xinzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,6 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	{
 		*(ptr1 + i) = *(ptr2 + i);
 		i++;
-	}	
+	}
 	return (dst);
 }
