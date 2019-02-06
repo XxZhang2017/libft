@@ -1,0 +1,54 @@
+c# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: xinzhang <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/01/25 16:14:58 by xinzhang          #+#    #+#              #
+#    Updated: 2019/01/25 16:38:00 by xinzhang         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+NAME = libft.a
+CFLAG = -Wall -Werror -Wextra
+
+SOURCE = ft_memccpy.c \
+		ft_memchr.c	\
+		ft_memcmp.c \	
+		ft_memcpy.c	\	
+		ft_memdel.c	\	
+		ft_memmove.c \
+		ft_memset.c	\
+		ft_memalloc.c 
+
+
+
+
+OBJ = ft_memccpy.o \
+		ft_memchr.o \	
+		ft_memchr.o	\
+		ft_memcmp.o	\	
+		ft_memcpy.o	\	
+		ft_memdel.o	\	
+		ft_memmove.o \
+		ft_memset.o \
+		ft_memalloc.o 
+
+ 
+
+	all: $(NAME)
+
+	$(NAME): $(OBJ)
+		ar -rcs $@ $(OBJ)
+
+	%.o: %.c
+		$(CC) $(CFLAGS) -c $< -o $@ -I ./
+
+	clean:
+		rm -f $(OBJ)
+
+	fclean: clean
+		rm -f $(NAME)
+
+	re: fclean all
