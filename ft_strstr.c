@@ -12,32 +12,56 @@
 
 #include "libft.h"
 
-char	*ft_strstr(const char *haystack, const char *needle)
+char	*ft_strstr(const char *str, const char *substr)
 {
-	int	i;
-	int j;
-	int	temp;
+	char *begin;
+	char *pattern;
 
-	i = 0;
-	j = 0;
-	if (needle && !ft_strlen(needle))
-		return ((char *)haystack);
-	while (haystack[i] && needle[j])
-	{	
-		j = 0;
-		if (haystack[i] == needle[j])
-		{		
-			temp = i;	
-			while (needle[j] && (haystack[i] == needle[j]))
-			{
-				i++;
-				j++;
-			}	
-			if (!needle[j])
-				return ((char *)&haystack[temp]); 
-			i = temp;
-		}
-		i++;
-	}
-	return (NULL);
+	if (substr && !ft_strlen(substr))
+		return ((char *)str);
+ 	while (*str) 
+	{
+		begin= (char *)str;
+		pattern = (char *)substr;
+	    while (*str && *pattern && *str == *pattern) 
+		{
+		      str++;
+		      pattern++;
+	    }
+	    if (!*pattern)
+	    	return begin;
+		str = begin + 1;
+	  }
+	  return NULL;
 }
+
+
+// char	*ft_strstr(const char *haystack, const char *needle)
+// {
+// 	int	i;
+// 	int j;
+// 	int	temp;
+
+// 	i = 0;
+// 	j = 0;
+// 	if (needle && !ft_strlen(needle))
+// 		return ((char *)haystack);
+// 	while (haystack[i] && needle[j])
+// 	{	
+// 		j = 0;
+// 		if (haystack[i] == needle[j])
+// 		{		
+// 			temp = i;	
+// 			while (needle[j] && (haystack[i] == needle[j]))
+// 			{
+// 				i++;
+// 				j++;
+// 			}	
+// 			if (!needle[j])
+// 				return ((char *)&haystack[temp]); 
+// 			i = temp;
+// 		}
+// 		i++;
+// 	}
+// 	return (NULL);
+// }
