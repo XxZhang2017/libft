@@ -29,6 +29,25 @@ static int		get_word_len(char const *str, char c)
 	return (len);
 }
 
+static int		ft_countwords(char const *str, char c)
+{
+	int count;
+	int	i;
+
+	i = 0;
+	count = 0;
+	while (str[i])
+	{
+		while (str[i] == c)
+			i++;
+		if (str[i] != c && str[i] != '\0')
+			count++;
+		while (str[i] != c && str[i] != '\0')
+			i++;
+	}
+	return (count);
+}
+
 char			**ft_strsplit(char const *s, char c)
 {
 	int		i;

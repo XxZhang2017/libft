@@ -90,11 +90,11 @@ void	ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 char	*ft_strjoin(char const *s1, char const *s2);
 void	ft_strclr(char *s);
-int		ft_countwords(char const *str, char c);
-int		ft_skip_sym(char *a, int c);
-char	*ft_strndup(const char *s1, size_t n);
-int		ft_search_sym(char *ch, int sym);
-int		ft_gwn_byc(char *ch, int c);
+//int		ft_countwords(char const *str, char c);
+//int		ft_skip_sym(char *a, int c);
+//char	*ft_strndup(const char *s1, size_t n);
+//int		ft_search_sym(char *ch, int sym);
+//int		ft_gwn_byc(char *ch, int c);
 int		ft_isspace(char a);
-int		ft_get_num_len(int n);
+//int		ft_get_num_len(int n);
 #endif

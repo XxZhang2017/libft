@@ -63,6 +63,7 @@ SRC = \
 	tolower\
 	toupper\
 
+
 OBJ = $(patsubst %, ft_%.o, $(SRC))
 
 all: $(NAME)
