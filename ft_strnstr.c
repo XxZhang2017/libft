@@ -14,24 +14,18 @@
 
 char	*ft_strnstr(const char *str, const char *substr, size_t len)
 {
-	char	*begin;
-	char	*pattern;
+	size_t	i;
 
-	if (substr && !ft_strlen(substr))
+	if (!substr && !ft_strlen(substr))
 		return ((char *)str);
-	while (*str && len > 0)
+	while (*str && len)
 	{
-		begin = (char *)str;
-		pattern = (char *)substr;
-		while (len > 0 && *str && *pattern && *str == *pattern)
-		{
-			str++;
-			pattern++;
-			len--;
-		}
-		if (!*pattern)
-			return (begin);
-		str = begin + 1;
+		i = 0;
+		while (i < len && str[i] && substr[i] && str[i] == substr[i])
+			i++;
+		if (!substr[i])
+			return ((char *)str);
+		str++;
 		len--;
 	}
 	return (NULL);

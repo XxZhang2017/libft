@@ -14,20 +14,21 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	if (n == -2147483648)
+	char	num[12];
+	int		sign;
+	int		digit;
+
+	num[11] = '\0';
+	sign = (n < 0) ? -1 : 1;
+	digit = 10;
+	if (n == 0)
+		num[digit--] = '0';
+	while (n != 0)
 	{
-		write(fd, "-2147483648", 11);
+		num[digit--] = (char)(((n % 10) * sign) + '0');
+		n = (n - (n % 10)) / 10;
 	}
-	else if (n >= 0 && n < 10)
-		ft_putchar_fd('0' + n, fd);
-	else if (n < 0)
-	{
-		ft_putchar_fd('-', fd);
-		ft_putnbr_fd(-n, fd);
-	}
-	else
-	{
-		ft_putnbr_fd(n / 10, fd);
-		ft_putchar_fd('0' + n % 10, fd);
-	}
+	if (sign < 0)
+		num[digit--] = '-';
+	ft_putstr_fd(&num[++digit], fd);
 }
