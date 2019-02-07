@@ -12,52 +12,74 @@
 
 #include "libft.h"
 
-static char	*ft_itoa_neg(int n)
+// static char	*ft_itoa_neg(int n)
+// {
+// 	char	*reg;
+// 	int		len_num;
+
+// 	len_num = ft_get_num_len(n);
+// 	reg = ft_strnew(len_num);
+// 	if (!reg)
+// 		return (NULL);
+// 	n = -n;
+// 	reg[0] = '-';
+// 	if (n < 0)
+// 	{
+// 		strcpy(&reg[1], "2147483648");
+// 		return (reg);
+// 	}
+// 	while (n > 0)
+// 	{
+// 		reg[--len_num] = n % 10 + '0';
+// 		n /= 10;
+// 	}
+// 	return (reg);
+// }
+
+// char		*ft_itoa(int n)
+// {
+// 	char	*reg;
+// 	int		len_num;
+
+// 	if (n < 0)
+// 	{
+// 		return (ft_itoa_neg(n));
+// 	}
+// 	else
+// 	{
+// 		len_num = ft_get_num_len(n);
+// 		reg = ft_strnew(len_num);
+// 		if (!reg)
+// 			return (NULL);
+// 		if (n == 0)
+// 			reg[0] = '0';
+// 		while (n > 0)
+// 		{
+// 			reg[--len_num] = n % 10 + '0';
+// 			n /= 10;
+// 		}
+// 	}
+// 	return (reg);
+// }
+
+
+char	*ft_itoa(int n)
 {
-	char	*reg;
-	int		len_num;
+	char	num[12];
+	int		sign;
+	int		digit;
 
-	len_num = ft_get_num_len(n);
-	reg = ft_strnew(len_num);
-	if (!reg)
-		return (NULL);
-	n = -n;
-	reg[0] = '-';
-	if (n < 0)
+	num[11] = '\0';
+	sign = (n < 0) ? -1 : 1;
+	digit = 10;
+	if (n == 0)
+		num[digit--] = '0';
+	while (n != 0)
 	{
-		strcpy(&reg[1], "2147483648");
-		return (reg);
+		num[digit--] = (char)(((n % 10) * sign) + '0');
+		n = (n - (n % 10)) / 10;
 	}
-	while (n > 0)
-	{
-		reg[--len_num] = n % 10 + '0';
-		n /= 10;
-	}
-	return (reg);
-}
-
-char		*ft_itoa(int n)
-{
-	char	*reg;
-	int		len_num;
-
-	if (n < 0)
-	{
-		return (ft_itoa_neg(n));
-	}
-	else
-	{
-		len_num = ft_get_num_len(n);
-		reg = ft_strnew(len_num);
-		if (!reg)
-			return (NULL);
-		if (n == 0)
-			reg[0] = '0';
-		while (n > 0)
-		{
-			reg[--len_num] = n % 10 + '0';
-			n /= 10;
-		}
-	}
-	return (reg);
+	if (sign < 0)
+		num[digit--] = '-';
+	return (ft_strdup(&num[++digit]));
 }
