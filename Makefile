@@ -62,8 +62,6 @@ SRC = \
 	strtrim\
 	tolower\
 	toupper\
-	countwords\
-	get_num_len\
 
 OBJ = $(patsubst %, ft_%.o, $(SRC))
 
@@ -80,6 +78,5 @@ clean:
 
 fclean: clean
 	@rm -f $(NAME)
-	@echo "$(NAME) removed."
 
 re: fclean all
