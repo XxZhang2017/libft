@@ -14,5 +14,19 @@
 
 int		ft_strnequ(char const *s1, char const *s2, size_t n)
 {
-	return (ft_strncmp(s1, s2, n) ? 1 : 0);
+	printf("%d\n", ft_strncmp(s1, s2, n));
+	return (ft_strncmp(s1, s2, n) ? 0 : 1);
 }
+
+// int main()
+// {
+// 	char	*s1 = STRING_1;
+// 	char	*s2 = STRING_2;
+
+// 	int		i1 = ft_strnequ(s1, s2, strlen(s1));
+// 	printf("%d\n", i1);
+// 	if (i1 == 0)
+// 		printf("success\n");
+// 	return (0);
+// }
+

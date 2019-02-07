@@ -20,6 +20,11 @@
 # include <unistd.h>
 # include <limits.h>
 
+// #define		STRING_1	"the cake is a lie !\0I'm hidden lol\r\n"
+// #define		STRING_4	"phrase differente pour le test"
+// #define		STRING_2	"there is no stars in the sky"
+// #define		STRING_3	"test basic !"
+
 typedef	struct	s_list
 {
 	void			*content;
